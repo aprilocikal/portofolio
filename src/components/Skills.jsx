@@ -7,7 +7,12 @@ import {
   FaFigma,
   FaGithub,
 } from "react-icons/fa";
-import { SiTailwindcss, SiSupabase, SiVite } from "react-icons/si";
+import {
+  SiTailwindcss,
+  SiSupabase,
+  SiVite,
+  SiMysql,
+} from "react-icons/si";
 
 const skills = [
   {
@@ -53,10 +58,18 @@ const skills = [
   {
     name: "Supabase",
     icon: <SiSupabase />,
+    level: 70,
+    category: "Backend",
+    description: "Real-time database & authentication",
+    color: "green",
+  },
+  {
+    name: "MySQL",
+    icon: <SiMysql />,
     level: 75,
     category: "Backend",
-    description: "Real-time database & auth",
-    color: "green",
+    description: "Relational database & SQL queries",
+    color: "blue",
   },
   {
     name: "Figma",
@@ -141,7 +154,7 @@ const Skills = () => {
       id="skills"
       className="relative py-24 bg-gradient-to-b from-white via-sky-50 to-cyan-100 text-slate-700"
     >
-      {/* subtle top fade */}
+      {/* top fade */}
       <div className="absolute top-0 left-0 w-full h-24 bg-gradient-to-b from-white to-transparent pointer-events-none" />
 
       <div className="relative max-w-6xl mx-auto px-4">
@@ -180,7 +193,7 @@ const Skills = () => {
 
                     <div className="h-2 w-full bg-sky-100 rounded-full overflow-hidden">
                       <div
-                        className="h-full rounded-full bg-gradient-to-r from-sky-400 to-blue-500"
+                        className="h-full rounded-full bg-gradient-to-r from-sky-400 to-blue-500 transition-all duration-700"
                         style={{ width: `${skill.level}%` }}
                       />
                     </div>
@@ -195,7 +208,7 @@ const Skills = () => {
         ))}
       </div>
 
-      {/* bottom smooth fade */}
+      {/* bottom fade */}
       <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-b from-cyan-100 to-white pointer-events-none" />
     </section>
   );

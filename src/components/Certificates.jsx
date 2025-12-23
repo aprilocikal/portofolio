@@ -20,17 +20,26 @@ const certificates = [
   },
 
   {
-    title: "Psikolog (Dispora)",
+    title: "Bahasa Jerman",
+    image: "/certificates/foto-sertif-jerman.jpg",
+    link: "https://drive.google.com/file/d/19tEb7c1NSt9veirpKWAbgVd-ZBeSoF5S/view?usp=drive_link",
+    category: "Language",
+    year: "2023",
+    difficulty: "Advanced",
+  },
+
+  {
+    title: "Psikolog Pemuda",
     image: "/certificates/foto-sertif-psiko.jpg",
-    category: "Psikolog",
+    category: "Dispora",
     link: "https://drive.google.com/file/d/1xPmIHQpHbc43DJDHHI5DPiANljjLs2ho/view?usp=sharing",
     year: "2023",
     difficulty: "Normal",
   },
   {
-    title: "Pelatihan Kepemimpinan (Dispora)",
+    title: "Pelatihan Kepemimpinan",
     image: "/certificates/foto-sertif-pemimpin.jpg",
-    category: "Pemimpin",
+    category: "Dispora",
     link: "https://drive.google.com/file/d/15QiE2-5j5Slt-JDUeAp5rggOLgz_Iy96/view?usp=drive_link",
     year: "2023",
     difficulty: "Normal",
@@ -40,9 +49,10 @@ const certificates = [
 /* 🔵 SEMUA KATEGORI DISAMAKAN WARNANYA */
 const categoryColors = {
   "Artificial Intelligence": "from-sky-500 to-blue-600",
-  Psikolog: "from-sky-500 to-blue-600",
-  Pemimpin: "from-sky-500 to-blue-600",
+  Dispora: "from-sky-500 to-blue-600",
+  Laguage: "from-sky-500 to-blue-600",
   "Cyber Security": "from-sky-500 to-blue-600",
+
 };
 
 const difficultyColors = {
