@@ -9,6 +9,16 @@ const certificates = [
     year: "2025",
     difficulty: "Advanced",
   },
+
+  {
+    title: "Cyber Security Workshop",
+    image: "/certificates/foto-sertif-cs.png",
+    link: "https://drive.google.com/file/d/1zqp57y4tigCfI4LxNihLF21xUwltq__T/view?usp=drive_link",
+    category: "Cyber Security",
+    year: "2025",
+    difficulty: "Advanced",
+  },
+
   {
     title: "Psikolog (Dispora)",
     image: "/certificates/foto-sertif-psiko.jpg",
@@ -32,6 +42,7 @@ const categoryColors = {
   "Artificial Intelligence": "from-sky-500 to-blue-600",
   Psikolog: "from-sky-500 to-blue-600",
   Pemimpin: "from-sky-500 to-blue-600",
+  "Cyber Security": "from-sky-500 to-blue-600",
 };
 
 const difficultyColors = {
