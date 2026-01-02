@@ -22,7 +22,7 @@ const experiences = [
     date: "Juni 2025 - Juni 2027",
     description:
       "Menjadi seorang yang berperan dalam kegiatan acara seperti acting dan lain sebagainya.",
-    logo: "/foto-teater.jpg",
+    logo: "/foto-teater.png",
     instagramUrl: "https://www.instagram.com/teaterui/",
   },
   {
