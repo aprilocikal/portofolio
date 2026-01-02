@@ -106,7 +106,7 @@ const Hero = () => {
               <span className="font-semibold text-slate-800">
                 Aprilo Cikal Munazat
               </span>
-              , developer berpengalaman yang berfokus pada{" "}
+              , developer berpengalaman  yang berfokus pada{" "}
               <span className="font-semibold bg-gradient-to-r from-sky-500 to-blue-500 bg-clip-text text-transparent">
                 aplikasi web modern
               </span>{" "}

@@ -2,26 +2,24 @@ import React, { useState, useEffect } from "react";
 
 const projects = [
   {
-    title: "Tiket konser (E-Commerce)",
+    title: "Songfess",
     description:
-      "Website Pemesanan dengan fitur cart, checkout, realtime, dan Supabase.",
-    tech: ["HTML", "JS", "CSS", "Supabase"],
-    image: "/foto-tiket-konser.png",
-    demo: "https://tiket-konser.vercel.app/",
-    code: "https://github.com/aprilocikal/tiket_konser",
-    category: "E-Commerce",
-    featured: true,
+      "Website mengirim pesan secara anonymous.",
+    tech: ["React.vite", "tailwind", "Supabase"],
+    image: "/foto-songfess.png",
+    demo: "https://songfess.site",
+    code: "https://github.com/aprilocikal/songfess",
+    category: "Public",
   },
   {
-    title: "Tiket konser (E-Commerce)",
+    title: "Tiket konser",
     description:
-      "Website Pemesanan dengan fitur cart, checkout, realtime, dan Supabase.",
+      "Website pemesanan dengan fitur cart, checkout, realtime, dan Supabase.",
     tech: ["HTML", "JS", "CSS", "Supabase"],
     image: "/foto-tiket-konser.png",
     demo: "https://tiket-konser.vercel.app/",
     code: "https://github.com/aprilocikal/tiket_konser",
     category: "E-Commerce",
-    featured: false,
   },
 ];
 
@@ -41,7 +39,6 @@ const Projects = () => {
       ? projects
       : projects.filter((p) => p.category === activeFilter);
 
-  const featuredProjects = projects.filter((p) => p.featured);
   const regularProjects = projects.filter((p) => !p.featured);
 
   return (
@@ -96,80 +93,6 @@ const Projects = () => {
             </button>
           ))}
         </div>
-
-        {/* Featured */}
-        {activeFilter === "All" && (
-          <div className="mb-24">
-            <h3 className="text-3xl font-bold text-center mb-10 text-slate-800">
-              Featured Projects
-            </h3>
-
-            <div className="grid gap-8 lg:grid-cols-2">
-              {featuredProjects.map((project, index) => (
-                <div
-                  key={index}
-                  onMouseEnter={() => setHoveredProject(`f-${index}`)}
-                  onMouseLeave={() => setHoveredProject(null)}
-                  className="relative bg-white/70 backdrop-blur-xl rounded-3xl overflow-hidden border border-sky-200 shadow-lg transition-all duration-500 hover:-translate-y-1"
-                >
-                  <div className="absolute top-4 right-4 bg-gradient-to-r from-sky-400 to-blue-500 text-white text-xs font-bold px-3 py-1 rounded-full">
-                    FEATURED
-                  </div>
-
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-80 object-cover"
-                  />
-
-                  <div className="p-8">
-                    <span className="text-xs font-semibold text-sky-600">
-                      {project.category}
-                    </span>
-                    <h3 className="text-2xl font-bold text-slate-800 mb-4">
-                      {project.title}
-                    </h3>
-                    <p className="text-slate-600 mb-6">
-                      {project.description}
-                    </p>
-
-                    <div className="flex flex-wrap gap-2 mb-8">
-                      {project.tech.map((tech, i) => (
-                        <span
-                          key={i}
-                          className="text-xs bg-sky-100 text-sky-700 px-3 py-1 rounded-lg"
-                        >
-                          {tech}
-                        </span>
-                      ))}
-                    </div>
-
-                    <div className="flex gap-4">
-                      <a
-                        href={project.demo}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="flex-1 text-center bg-gradient-to-r from-sky-500 to-blue-600 text-white py-4 rounded-xl font-semibold"
-                      >
-                        View Live
-                      </a>
-                      {project.code !== "#" && (
-                        <a
-                          href={project.code}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="flex-1 text-center border border-sky-300 text-sky-700 py-4 rounded-xl font-semibold hover:bg-sky-50"
-                        >
-                          Source Code
-                        </a>
-                      )}
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        )}
 
         {/* Regular Projects */}
         <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
