@@ -31,6 +31,12 @@ const certificates = [
     link: "https://drive.google.com/file/d/1xPmIHQpHbc43DJDHHI5DPiANljjLs2ho/view",
     category: "Dispora",
   },
+  {
+    title: "Pelatihan Kepeminpinan",
+    image: "/certificates/foto-sertif-pemimpin.jpg",
+    link: "https://drive.google.com/file/d/15QiE2-5j5Slt-JDUeAp5rggOLgz_Iy96/view?usp=drive_link",
+    category: "Dispora",
+  },
 ];
 
 export default function Certificates() {
