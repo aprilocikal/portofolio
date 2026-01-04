@@ -27,10 +27,10 @@ const educations = [
   },
   {
     level: "Perguruan Tinggi",
-    institution: "Universitas Indonesia – CCIT Program",
+    institution: "Universitas Indonesia – Profesional Program CEP CCIT FTUI",
     description:
       "Fokus pada pengembangan skill IT, project-based learning, dan profesionalisme.",
-    logo: "/logo/logo-ccit.jpg", // ← ganti nanti
+    logo: "/logo/logo-UI.png", // ← ganti nanti
     color: "from-sky-500 to-indigo-600",
   },
 ];
