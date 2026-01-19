@@ -1,23 +1,29 @@
 import { useState } from "react";
 
 const certificates = [
-   {
+  {
     title: "Belajar Dasar AI",
     image: "/certificates/foto-dicoding-ai.png",
     link: "https://www.dicoding.com/certificates/NVP7J322OXR0",
     category: "Dicoding",
   },
-   {
+  {
     title: "Financial Literacy",
     image: "/certificates/foto-dicoding-finance.png",
     link: "https://www.dicoding.com/certificates/L4PQ2KEOOZO1",
     category: "Dicoding",
   },
   {
+    title: "Generative AI",
+    image: "/certificates/foto-dicoding-hadir.png",
+    link: "https://drive.google.com/file/d/1Eb11bMtaBvhclobKYktHrZq-4JPRpBct/view?usp=drive_link",
+    category: "Dicoding",
+  },
+  {
     title: "Cyber Security Workshop",
     image: "/certificates/foto-sertif-cs.png",
     link: "https://drive.google.com/file/d/1zqp57y4tigCfI4LxNihLF21xUwltq__T/view",
-    category: "Cyber Security",
+    category: "Information Technology",
   },
   {
     title: "Bahasa Jerman",
@@ -26,26 +32,35 @@ const certificates = [
     category: "Language",
   },
   {
+    title: "Pelatihan Kepeminpinan",
+    image: "/certificates/foto-sertif-pemimpin.jpg",
+    link: "https://drive.google.com/file/d/15QiE2-5j5Slt-JDUeAp5rggOLgz_Iy96/view?usp=drive_link",
+    category: "Dispora",
+  },
+  {
     title: "Psikolog Pemuda",
     image: "/certificates/foto-sertif-psiko.jpg",
     link: "https://drive.google.com/file/d/1xPmIHQpHbc43DJDHHI5DPiANljjLs2ho/view",
     category: "Dispora",
   },
   {
-    title: "Pelatihan Kepeminpinan",
-    image: "/certificates/foto-sertif-pemimpin.jpg",
-    link: "https://drive.google.com/file/d/15QiE2-5j5Slt-JDUeAp5rggOLgz_Iy96/view?usp=drive_link",
-    category: "Dispora",
+    title: "Dakwah Islami",
+    image: "/certificates/foto-sertif-h2.JPG",
+    link: "https://drive.google.com/file/d/1z9LLcFd_mWAgrh5_3dBRHewwPFObz88i/view?usp=drive_link",
+    category: "Champion Award",
+  },
+  {
+    title: "Dakwah Islami",
+    image: "/certificates/foto-sertif-j2smp.JPG",
+    link: "https://drive.google.com/file/d/1pJCi9EBjzjfZOrc3_GMj5L491r9wDWj4/view?usp=drive_link",
+    category: "Champion Award",
   },
 ];
 
 export default function Certificates() {
   const [selectedCategory, setSelectedCategory] = useState("All");
 
-  const categories = [
-    "All",
-    ...new Set(certificates.map((c) => c.category)),
-  ];
+  const categories = ["All", ...new Set(certificates.map((c) => c.category))];
 
   const filtered =
     selectedCategory === "All"
@@ -69,7 +84,8 @@ export default function Certificates() {
           </h2>
 
           <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-            A collection of my professional certifications and learning achievements
+            A collection of my professional certifications and learning
+            achievements
           </p>
         </div>
 
