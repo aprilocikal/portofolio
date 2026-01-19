@@ -50,7 +50,7 @@ const certificates = [
     category: "Champion Award",
   },
   {
-    title: "Dakwah Islami",
+    title: "Public Speaking",
     image: "/certificates/foto-sertif-j2smp.JPG",
     link: "https://drive.google.com/file/d/1pJCi9EBjzjfZOrc3_GMj5L491r9wDWj4/view?usp=drive_link",
     category: "Champion Award",
