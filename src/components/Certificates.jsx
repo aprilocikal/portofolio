@@ -20,6 +20,12 @@ const certificates = [
     category: "Dicoding",
   },
   {
+    title: "Siap Programmer 2026",
+    image: "/certificates/foto-dicoding-2026.png",
+    link: "https://drive.google.com/file/d/13ZRW7jNHwovvmnXZ4F04Y6VP_YNWt9wc/view?usp=drive_link",
+    category: "Dicoding",
+  },
+  {
     title: "Cyber Security Workshop",
     image: "/certificates/foto-sertif-cs.png",
     link: "https://drive.google.com/file/d/1zqp57y4tigCfI4LxNihLF21xUwltq__T/view",
