@@ -25,6 +25,12 @@ const certificates = [
     link: "https://drive.google.com/file/d/13ZRW7jNHwovvmnXZ4F04Y6VP_YNWt9wc/view?usp=drive_link",
     category: "Dicoding",
   },
+   {
+    title: "Pemrograman dengan python",
+    image: "/certificates/foto-dicoding-python.png",
+    link: "https://www.dicoding.com/certificates/MEPJ27N0WP3V",
+    category: "Dicoding",
+  },
   {
     title: "Cyber Security Workshop",
     image: "/certificates/foto-sertif-cs.png",
