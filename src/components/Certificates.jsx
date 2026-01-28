@@ -31,6 +31,12 @@ const certificates = [
     link: "https://www.dicoding.com/certificates/MEPJ27N0WP3V",
     category: "Dicoding",
   },
+   {
+    title: "Introduction to AI",
+    image: "/certificates/foto-coursera-introduction.png",
+    link: "https://coursera.org/share/11a114f918ed52014b9f1f784a4110a2",
+    category: "Coursera",
+  },
   {
     title: "Cyber Security Workshop",
     image: "/certificates/foto-sertif-cs.png",
