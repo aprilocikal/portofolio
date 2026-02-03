@@ -32,6 +32,12 @@ const certificates = [
     category: "Dicoding",
   },
    {
+    title: "DevCoach 225: Gen AI",
+    image: "/certificates/foto-dicoding-emang.png",
+    link: "https://drive.google.com/file/d/1fo1imOHem_KMs-c4HhIVK_ghcLLxsIGP/view?usp=drive_link",
+    category: "Dicoding",
+  },
+   {
     title: "Introduction to AI",
     image: "/certificates/foto-coursera-introduction.png",
     link: "https://coursera.org/share/11a114f918ed52014b9f1f784a4110a2",
